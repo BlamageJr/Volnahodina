@@ -2,66 +2,66 @@ body{
 font-family: ubuntu mono,monospace;
 color: black;
 height: 347vh;
+background-color: #F5F5F5;
 }
 
 
 header {
-	height: 100vh;
+        height: 100vh;
 }
 
 .textContainer {
-	margin: auto;
-	text-align: center;
-	width: 50%;
-	padding-top: 25vh;
-	font-size: 30px;
+        margin: auto;
+        text-align: center;
+        width: 50%;
+        padding-top: 25vh;
+        font-size: 30px;
 }
 
 
 .imageContainer {
-	display: flex;
-	flex-direction: column;
-	height: 99vh;
-	padding-right: 3px;
+        display: flex;
+        flex-direction: column;
+        height: 99vh;
+        padding-right: 3px;
 }
 
 
 
 
 .scrollImage {
-	display: block;
-	width: 90px;
-	margin-top: auto;
-	margin-left: auto;
-	margin-right: auto;
+        display: block;
+        width: 90px;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 
 
 article {
-	color: white;
-	height: 120vh;
-	width: 100%;
-	background-image: linear-gradient(180deg,rgb(68 68 68 / 68%),rgb(58 58 58 / 94%) 40%),url("zsvv.jpg");
-	background-size: cover;
-	background-attachment: fixed;
+        color: white;
+        height: 120vh;
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
 }
 
 .italic {
-	font-style: italic;
+        font-style: italic;
 }
 
 .bold {
-	font-style: bold;
+        font-style: bold;
 }
 
 
 .articleText {
-	font-size: 20px;
-	margin: auto;
-	width: 70%;
-	padding-top: 50vh;
-	padding-left: 5%;
+        font-size: 3vh;
+        margin: auto;
+        width: 70%;
+        padding-top: 50vh;
+        padding-left: 5%;
 }
 
 
@@ -70,42 +70,54 @@ padding-left: 5%;
 }
 
 .topSubtitle {
-	padding-left: 10%;
+        padding-left: 10%;
 }
 
 
 article:after {
-content: '';
-    background-image: url(http://honzagalajda.cekuj.net/www/img/bottom-wave.svg);
+    content: '';
+    background-image: url(http://honzagalajda.cekuj.net/img/wave.svg);
     background-position: center bottom;
     background-size: 101%;
     background-repeat: no-repeat;
     width: 100%;
-    height: 130px;
+    height: 50vh;
+    bottom: -150vh;
     position: absolute;
-    bottom: -121vh;
+    padding-top: auto;
     left: 0;
+    transform: scaleY(-1);
 }
 
+
+@media (max-width: 400px) {
+
+    article:after {
+        bottom: -160vh;
+    }
+
+}
+
+
 .subArticle {
-	margin: auto;
-	width: 60%;
-	padding-top: 40vh;
-	text-align: center;
+        margin: auto;
+        width: 60%;
+        padding-top: 40vh;
+        text-align: center;
 }
 
 
 .versionText {
-	font-size: 21px;
+        font-size: 21px;
 }
 
 .subArticle .nextVersion {
-	padding-left: 30%;
-	padding-top: 20px;
+        padding-left: 30%;
+        padding-top: 20px;
 }
 
 .subArticle .versionText h1 {
-	margin-right: 40%;
+        margin-right: 40%;
 }
 
 
@@ -144,37 +156,38 @@ z-index: 0;
 }
 
 button:hover {
-	background: #F6F9FE;
-	color: #174ea6;
+        background: #F6F9FE;
+        color: #174ea6;
 }
 
 
 footer {
-	margin-top: 28%;
-	text-align: center;
+        margin-top: 28%;
+        text-align: center;
 
-	height: 260px;
-	background-color: #111;
+        height: 300px;
+        background-color: #111;
+        bottom: 0px;
 	color: white;
 }
 
 footer:before {
     content: '';
-    background-image: url(http://honzagalajda.cekuj.net/www/img/top-wave.svg);
+    background-image: url(http://honzagalajda.cekuj.net/img/wave.svg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 101%;
-    height: 140px;
+    height: 200px;
     width: 100%;
     position: absolute;
-	left: 0;
+        left: 0;
 }
 
 footer .container {
-	padding-top: 150px;
+        padding-top: 195px;
 }
 
 footer .container a {
-	text-decoration: none;
-	color: #666
+        text-decoration: none;
+        color: #666
 }
