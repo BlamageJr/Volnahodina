@@ -1,0 +1,48 @@
+body{
+font-family: ubuntu mono,monospace;
+background-color: #111;
+color: white;
+margin: auto;
+text-align: center;
+}
+
+#errorStr{
+color: red;
+font-style: italic;
+}
+
+button {
+	color: white;
+	background-color: #222;
+	border: none;
+	font-size: 16px;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+	font-weight: bold;
+}
+
+input {
+	text-align: center;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+}
+
+a {
+	color: white;
+	margin: auto;
+	text-align: center;
+	background-color: #333;
+	font-size: 20px;
+	padding: 2px;
+	border-radius: 3px;
+}
+
+div {
+	margin-top: 20%;
+}
+
+a {
+	text-decoration: none;
+}

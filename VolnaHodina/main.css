@@ -1,0 +1,180 @@
+body{
+font-family: ubuntu mono,monospace;
+color: black;
+height: 347vh;
+}
+
+
+header {
+	height: 100vh;
+}
+
+.textContainer {
+	margin: auto;
+	text-align: center;
+	width: 50%;
+	padding-top: 25vh;
+	font-size: 30px;
+}
+
+
+.imageContainer {
+	display: flex;
+	flex-direction: column;
+	height: 99vh;
+	padding-right: 3px;
+}
+
+
+
+
+.scrollImage {
+	display: block;
+	width: 90px;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+article {
+	color: white;
+	height: 120vh;
+	width: 100%;
+	background-image: linear-gradient(180deg,rgb(68 68 68 / 68%),rgb(58 58 58 / 94%) 40%),url("zsvv.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-style: bold;
+}
+
+
+.articleText {
+	font-size: 20px;
+	margin: auto;
+	width: 70%;
+	padding-top: 50vh;
+	padding-left: 5%;
+}
+
+
+.italic {
+padding-left: 5%;
+}
+
+.topSubtitle {
+	padding-left: 10%;
+}
+
+
+article:after {
+content: '';
+    background-image: url(http://honzagalajda.cekuj.net/www/img/bottom-wave.svg);
+    background-position: center bottom;
+    background-size: 101%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    bottom: -121vh;
+    left: 0;
+}
+
+.subArticle {
+	margin: auto;
+	width: 60%;
+	padding-top: 40vh;
+	text-align: center;
+}
+
+
+.versionText {
+	font-size: 21px;
+}
+
+.subArticle .nextVersion {
+	padding-left: 30%;
+	padding-top: 20px;
+}
+
+.subArticle .versionText h1 {
+	margin-right: 40%;
+}
+
+
+button {
+align-items:center;
+appearance: none;
+background-color: #fff;
+border-radius: 68px;
+border-style: none;
+box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+box-sizing: border-box;
+color: #3c4043;
+cursor: pointer;
+display: inline-flex;
+fill: currentcolor;
+font-family: ubuntu mono, monospace;
+font-size: 20px;
+font-weight: 500;
+height: 68px;
+justify-content: center;
+letter-spacing: .25px;
+line-height: normal;
+max-width: 100%;
+overflow: visible;
+padding: 2px 24px;
+position: relative;
+text-align: center;
+text-transform: none;
+transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+width: auto;
+will-change: transform, opacity;
+z-index: 0;
+}
+
+button:hover {
+	background: #F6F9FE;
+	color: #174ea6;
+}
+
+
+footer {
+	margin-top: 28%;
+	text-align: center;
+
+	height: 260px;
+	background-color: #111;
+	color: white;
+}
+
+footer:before {
+    content: '';
+    background-image: url(http://honzagalajda.cekuj.net/www/img/top-wave.svg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 101%;
+    height: 140px;
+    width: 100%;
+    position: absolute;
+	left: 0;
+}
+
+footer .container {
+	padding-top: 150px;
+}
+
+footer .container a {
+	text-decoration: none;
+	color: #666
+}

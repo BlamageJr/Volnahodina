@@ -1,0 +1,74 @@
+body{
+font-family: ubuntu mono,monospace;
+background-color: #111;
+color: white;
+}
+
+#errorStr{
+color: red;
+font-style: italic;
+}
+
+h1 {
+	margin: auto;
+	text-align: center;
+	padding: 15px;
+	padding-bottom: 30px;
+}
+
+h2 {
+	margin: auto;
+	text-align: center;
+}
+
+p {
+	margin: auto;
+	text-align: center;
+}
+
+div {
+	margin: auto;
+	color: white;
+	text-align: center;
+	background-color: #333;
+	border: 3px solid #444;
+	border-radius: 10px;
+	width: 350px;
+	padding-top: 45px;
+	padding-bottom: 60px;
+}
+
+.active {
+	background-color: #202020;
+}
+
+ul {
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+.ikona {
+	width: 25px;
+	height: 25px;
+}
+
+.rozvrh {
+	margin-top: 27vh;
+}

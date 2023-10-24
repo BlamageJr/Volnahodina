@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Volná Hodina</title>
+<link rel="stylesheet" href="styleRozvrh.css">
+</head>
+
+<body>
+<script src="functions.js"></script>
+
+
+<ul>
+	<li><a href= "rozvrh.html"><img class="ikona" src="dum.png"></a></li>
+	<li><a class="active" href= "celyRozvrh.html">Rozvrh</a></li>
+	<li><a href= "mapa.html">Mapa školy</a></li>
+	<li style= "float:right"><a href= "oNas.html">O nás</a></li>
+</ul>
+
+
+<img class="obraz" id="obraz" src="8b.png">
+
+<div class="err">
+<h1 id="errNadpis"></h1>
+<p id="errNapis"></p>
+</div>
+
+
+
+<script>
+
+//8.B
+if (localStorage.getItem(trida) == "8.B") {
+
+	document.getElementById("obraz").src = "8b.png"
+
+//7.B
+} else if (localStorage.getItem(trida) == "7.B") {
+
+document.getElementById("obraz").src = "7b.png"
+
+} else {
+	document.getElementById("obraz").src = null
+	document.getElementById("errNadpis").innerHTML = "Omlouváme se :/"
+	document.getElementById("errNapis").innerHTML = "Vaše tøída zatím není podporovaná, ale brzy se to zmìní!"
+}
+
+</script>
+
+
+
+
+
+
+<script>console.log(localStorage.getItem(uzivatel, trida))</script>
+</body>
+
+
+</html>
