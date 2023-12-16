@@ -609,8 +609,8 @@ if (localStorage.getItem(trida) == "9.B") {
 		jazyk()
 	}
 
-//8.A
-} else if(localStorage.getItem(trida) == "8.A") {
+//9.A
+} else if(localStorage.getItem(trida) == "9.A") {
 
 
 	//Funkce pro třídy, nastavuje předměty
@@ -718,50 +718,30 @@ if (localStorage.getItem(trida) == "9.B") {
 
 	//ned�le
 	if (now.getDay() === 0) {
-		document.getElementById("hodina").innerHTML = "Třídnická hodina"
-		document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-		document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+		ObcanskaVychova()
 	}
 
 	//pond�l�
 	if (now.getDay() === 1) {
 	
 		if (now.getHours() < 8) {
-			document.getElementById("hodina").innerHTML = "Třídnická hodina"
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			ObcanskaVychova() //1.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Fyzika" //2.hodina
-			document.getElementById("ucitel").innerHTML = "Elena Ruzanova"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			CeskyJazykPo() //2.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() > 55) {
-			document.getElementById("hodina").innerHTML = "Český Jazyk" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Lenka Fisherová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Dejepis() //3.hodina
 		} else if (now.getHours() === 9) {
-			document.getElementById("hodina").innerHTML = "Český Jazyk" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Lenka Fisherová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Dejepis() //3.hodina
 		} else if (now.getHours() === 10 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Anglický jazyk" //4.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová, Ann Bohutínská"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A, 9.C"
+			Telo() //4.hodina
 		} else if (now.getHours() === 10 && now.getHours() > 55) {
-			document.getElementById("hodina").innerHTML = "Anglický Jazyk Rozšířený" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Ann Bohutínská, Jeremy Douglass Fane"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A, 7.C"
+			AnglickyJazyk() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() < 50) {
-			document.getElementById("hodina").innerHTML = "Anglický Jazyk Rozšířený" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Ann Bohutínská, Jeremy Douglass Fane"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A, 7.C"
+			AnglickyJazyk() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() > 50) {
-			document.getElementById("hodina").innerHTML = "Tělesná výchova"//6.hodina
-			document.getElementById("ucitel").innerHTML = "Tomáš Kousek, Iveta Teřlová"
-			document.getElementById("ucebna").innerHTML = "Učebna: Tělocvična"
+			TridnickaHodina()//6.hodina
 		} else if (now.getHours() === 12 && now.getMinutes() < 45) {
-			document.getElementById("hodina").innerHTML = "Tělesná výchova"//6.hodina
-			document.getElementById("ucitel").innerHTML = "Tomáš kousek, Iveta Teřlová"
-			document.getElementById("ucebna").innerHTML = "Učebna: Tělocvična"
+			TridnickaHodina()//6.hodina
 		} else if (now.getHours() === 12 && now.getMinutes() > 45) {
 			document.getElementById("hodina").innerHTML = "KONEC"//KONEC
 			document.getElementById("ucitel").innerHTML = ""
@@ -777,47 +757,41 @@ if (localStorage.getItem(trida) == "9.B") {
 	if (now.getDay() === 2) {
 	
 		if (now.getHours() < 8) {
-			document.getElementById("hodina").innerHTML = "Český Jazyk" //1.hodina
-			document.getElementById("ucitel").innerHTML = "Lenka Fisherová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			CeskyJazykUt() //1.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Výtvarná Výchová" //2.hodina
-			document.getElementById("ucitel").innerHTML = "Lenka Fischerová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			jazyk() //2.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() > 55) {
-			document.getElementById("hodina").innerHTML = "Matematika" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Jitka Pokorová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			CeskyJazykUt() //3.hodina
 		} else if (now.getHours() === 9) {
-			document.getElementById("hodina").innerHTML = "Matematika" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Jitka Pokorová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			CeskyJazykUt() //3.hodina
 		} else if (now.getHours() === 10 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Cizí jazyk" //4.hodina
-			document.getElementById("ucitel").innerHTML = "Karolína Přibylová, Lucie Novohradská, Renata Voldánová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 7.C, 8.A, 8.B"
+			Matematika() //4.hodina
 		} else if (now.getHours() === 10 && now.getHours() > 55) {
-			document.getElementById("hodina").innerHTML = "Cizí jazyk" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Karolína Přibylová, Lucie Novohradská, Renata Voldánová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 7.C, 8.A, 8.B"
+			Matematika() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() < 50) {
-			document.getElementById("hodina").innerHTML = "Cizí jazyk" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Karolína Přibylová, Lucie Novohradská, Renata Voldánová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 7.C, 8.A, 8.B"
+			Matematika() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() > 50) {
-			document.getElementById("hodina").innerHTML = "Dějepis" //6.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
-		} else if (now.getHours() === 12 && now.getMinutes() < 45) {
-			document.getElementById("hodina").innerHTML = "Dějepis" //6.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
-		} else if (now.getHours() === 12 && now.getMinutes() > 45) {
-			document.getElementById("hodina").innerHTML = "KONEC" //7.hodina
+			document.getElementById("hodina").innerHTML = "!!! VOLNÁ HODINA !!!" //6.hodina
 			document.getElementById("ucitel").innerHTML = ""
 			document.getElementById("ucebna").innerHTML = ""
-		} else if (now.getHours() > 13) {
-			document.getElementById("hodina").innerHTML = "KONEC" //7.hodina
+		} else if (now.getHours() === 12 && now.getMinutes() < 45) {
+			document.getElementById("hodina").innerHTML = "!!! VOLNÁ HODINA !!!" //6.hodina
+			document.getElementById("ucitel").innerHTML = ""
+			document.getElementById("ucebna").innerHTML = ""
+		}  else if (now.getHours() === 12 && now.getMinutes() > 45) {
+			RodinnaVychova() //7.hodina
+		} else if (now.getHours() === 13 && now.getMinutes() < 40) {
+			RodinnaVychova() //7.hodina
+		} else if (now.getHours() === 13 && now.getMinutes() > 40) {
+			RodinnaVychova() //8.hodina
+		} else if (now.getHours() === 14 && now.getMinutes() < 35) {
+			RodinnaVychova() //8.hodina
+		} else if (now.getHours() === 14 && now.getMinutes() > 35) {
+			document.getElementById("hodina").innerHTML = "KONEC" //KONEC
+			document.getElementById("ucitel").innerHTML = ""
+			document.getElementById("ucebna").innerHTML = ""
+		} else if (now.getHours() > 14) {
+			document.getElementById("hodina").innerHTML = "KONEC" //KONEC
 			document.getElementById("ucitel").innerHTML = ""
 			document.getElementById("ucebna").innerHTML = ""
 		}
@@ -827,71 +801,29 @@ if (localStorage.getItem(trida) == "9.B") {
 	if (now.getDay() === 3) {
 	
 		if (now.getHours() < 8) {
-			document.getElementById("hodina").innerHTML = "!!!VOLNÁ HODINA!!!" //1.hodina
-			document.getElementById("ucitel").innerHTML = ""
-			document.getElementById("ucebna").innerHTML = ""
+			ChemieSt() //1.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Anglický jazyk" //2.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebny: 8.A"
+			CeskyJazykPo() //2.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() > 55) {
-			document.getElementById("hodina").innerHTML = "Český jazyk" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Lenka Fischerová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			jazyk() //3.hodina
 		} else if (now.getHours() === 9) {
-			document.getElementById("hodina").innerHTML = "Český jazyk" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Lenka Fischerová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			jazyk() //3.hodina
 		} else if (now.getHours() === 10 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Matematika" //4.hodina
-			document.getElementById("ucitel").innerHTML = "Jitka Pokorová"
-			document.getElementById("ucebna").innerHTML = "UČebna: 8.A"
+			AnglickyJazykSt() //4.hodina
 		} else if (now.getHours() === 10 && now.getHours() > 55) {
-			document.getElementById("hodina").innerHTML = "!!!VOLNÁ HODINA!!!" //5.hodina
-			document.getElementById("ucitel").innerHTML = ""
-			document.getElementById("ucebna").innerHTML = ""
+			Matematika() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() < 50) {
-			document.getElementById("hodina").innerHTML = "!!!VOLNÁ HODINA!!!" //5.hodina
-			document.getElementById("ucitel").innerHTML = ""
-			document.getElementById("ucebna").innerHTML = ""
+			Matematika() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() > 50) {
-			document.getElementById("hodina").innerHTML = "Dějepis" //6.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Telo() //6.hodina
 		} else if (now.getHours() === 12 && now.getMinutes() < 45) {
-			document.getElementById("hodina").innerHTML = "Dějepis" //6.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Telo() //6.hodina
 		} else if (now.getHours() === 12 && now.getMinutes() > 45) {
-			document.getElementById("hodina").innerHTML = "Tělesná výchova" //7.hodina
-			document.getElementById("ucitel").innerHTML = "Tomáš Kousek, Iveta Teřlová"
-			document.getElementById("ucebna").innerHTML = "Učebna: Tělocvična"
-		} else if (now.getHours() === 13 && now.getMinutes() < 40) {
-			document.getElementById("hodina").innerHTML = "Tělesná výchova" //7.hodina
-			document.getElementById("ucitel").innerHTML = "Tomáš Kousek, Iveta Teřlová"
-			document.getElementById("ucebna").innerHTML = "Učebna: Tělocvična"
-		} else if (now.getHours() === 13 && now.getMinutes() > 40) {
-			document.getElementById("hodina").innerHTML = "Informatika" //8.hodina
-			document.getElementById("ucitel").innerHTML = "Wadžiha Rahimi"
-			document.getElementById("ucebna").innerHTML = "Učebna: Počítačová učebna"
-		} else if (now.getHours() === 14 && now.getMinutes() < 35) {
-			document.getElementById("hodina").innerHTML = "Informatika" //8.hodina
-			document.getElementById("ucitel").innerHTML = "Wadžiha Rahimi"
-			document.getElementById("ucebna").innerHTML = "Učebna: Počítačová učebna"
-		} else if (now.getHours() === 14 && now.getMinutes() > 35) {
-			document.getElementById("hodina").innerHTML = "Rodinná výchova" //9. hodina
-			document.getElementById("ucitel").innerHTML = "Hana Císařovská"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
-		} else if (now.getHours() === 15 && now.getMinutes() < 30) {
-			document.getElementById("hodina").innerHTML = "Rodinná výchova" //9. hodina
-			document.getElementById("ucitel").innerHTML = "Hana Císařovská"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
-		} else if (now.getHours() === 15 && now.getMinutes() >= 30) {
-			document.getElementById("hodina").innerHTML = "KONEC" //KONEC
+			document.getElementById("hodina").innerHTML = "KONEC" //7.hodina
 			document.getElementById("ucitel").innerHTML = ""
 			document.getElementById("ucebna").innerHTML = ""
-		} else if (now.getHours() > 15) {
-			document.getElementById("hodina").innerHTML = "KONEC" //KONEC
+		} else if (now.getHours() > 12) {
+			document.getElementById("hodina").innerHTML = "KONEC" //7.hodina
 			document.getElementById("ucitel").innerHTML = ""
 			document.getElementById("ucebna").innerHTML = ""
 		}
@@ -901,41 +833,23 @@ if (localStorage.getItem(trida) == "9.B") {
 	if (now.getDay() === 4) {
 	
 		if (now.getHours() < 8) {
-			document.getElementById("hodina").innerHTML = "Fyzika" //1.hodina
-			document.getElementById("ucitel").innerHTML = "Elena Ruzanova"
-			document.getElementById("ucebna").innerHTML = "Učebna: Učebna chemie"
+			Matematika() //1.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Český jazyk" //2.hodina
-			document.getElementById("ucitel").innerHTML = "Lenka Fischerová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Fyzika() //2.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() > 55) {
-			document.getElementById("hodina").innerHTML = "Matematika" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Jitka Pokorová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			AnglickyJazykCt() //3.hodina
 		} else if (now.getHours() === 9) {
-			document.getElementById("hodina").innerHTML = "Matematika" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Jitka Pokorová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			AnglickyJazykCt() //3.hodina
 		} else if (now.getHours() === 10 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Matematika" //4.hodina
-			document.getElementById("ucitel").innerHTML = "Jitka Pokorová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			AnglickyJazykCt() //4.hodina
 		} else if (now.getHours() === 10 && now.getHours() > 55) {
-			document.getElementById("hodina").innerHTML = "Přírodopis" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Zdeňka Zýková"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			CeskyJazykUt() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() < 50) {
-			document.getElementById("hodina").innerHTML = "Přírodopis" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Zdeňka Zýková"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			CeskyJazykUt() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() > 50) {
-			document.getElementById("hodina").innerHTML = "Anglický jazyk"//6.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Matematika() //6.hodina
 		} else if (now.getHours() === 12 && now.getMinutes() < 45) {
-			document.getElementById("hodina").innerHTML = "Anglický jazyk"//6.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Matematika() //6.hodina
 		} else if (now.getHours() === 12 && now.getMinutes() > 45) {
 			document.getElementById("hodina").innerHTML = "!!!VOLNÁ HODINA!!!"//7. hodina
 			document.getElementById("ucitel").innerHTML = ""
@@ -945,21 +859,13 @@ if (localStorage.getItem(trida) == "9.B") {
 			document.getElementById("ucitel").innerHTML = ""
 			document.getElementById("ucebna").innerHTML = ""
 		} else if (now.getHours() === 13 && now.getMinutes() >= 40) {
-			document.getElementById("hodina").innerHTML = "Občanská výchova"//8. hodina
-			document.getElementById("ucitel").innerHTML = "David Polánka"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			VytvarnaVychova()//8. hodina
 		} else if (now.getHours() === 14 && now.getMinutes() < 35) {
-			document.getElementById("hodina").innerHTML = "Občanská výchova"//8. hodina
-			document.getElementById("ucitel").innerHTML = "David Polánka"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			VytvarnaVychova()//8. hodina
 		} else if (now.getHours() === 14 && now.getMinutes() >= 35) {
-			document.getElementById("hodina").innerHTML = "Hudební výchova"//9. hodina
-			document.getElementById("ucitel").innerHTML = "Sebastian Lang"
-			document.getElementById("ucebna").innerHTML = "Učebna: Aula"
+			HudebniVychova()//9. hodina
 		} else if (now.getHours() === 15 && now.getMinutes() < 30) {
-			document.getElementById("hodina").innerHTML = "Hudební výchova"//9. hodina
-			document.getElementById("ucitel").innerHTML = "Sebastian Lang"
-			document.getElementById("ucebna").innerHTML = "Učebna: Aula"
+			HudebniVychova()//9. hodina
 		} else if (now.getHours() === 15 && now.getMinutes() >= 30) {
 			document.getElementById("hodina").innerHTML = "KONEC"//KONEC
 			document.getElementById("ucitel").innerHTML = ""
@@ -975,47 +881,25 @@ if (localStorage.getItem(trida) == "9.B") {
 	if (now.getDay() === 5) {
 	
 		if (now.getHours() < 8) {
-			document.getElementById("hodina").innerHTML = "Matematika" //1.hodina
-			document.getElementById("ucitel").innerHTML = "Jitka Pokorová"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			Prirodopis() //1.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Chemie" //2.hodina
-			document.getElementById("ucitel").innerHTML = "Jana Brožová"
-			document.getElementById("ucebna").innerHTML = "Učebna: Učebna chemie"
+			Zemepis() //2.hodina
 		} else if (now.getHours() === 8 && now.getMinutes() > 55) {
-			document.getElementById("hodina").innerHTML = "Anglický jazyk" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová, Jeremy Douglass Fane"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A, 7.D"
+			AngticklyJazykPa() //3.hodina
 		} else if (now.getHours() === 9) {
-			document.getElementById("hodina").innerHTML = "Anglický jazyk" //3.hodina
-			document.getElementById("ucitel").innerHTML = "Kateřina Danešová, Jeremy Douglass Fane"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A, 7.D"
+			AngticklyJazykPa() //3.hodina
 		} else if (now.getHours() === 10 && now.getMinutes() < 55) {
-			document.getElementById("hodina").innerHTML = "Přírodopis" //4.hodina
-			document.getElementById("ucitel").innerHTML = "Zdeňka Zýková"
-			document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+			ChemiePa() //4.hodina
 		} else if (now.getHours() === 10 && now.getHours() > 55) {
-			document.getElementById("hodina").innerHTML = "Zeměpis" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Hana Doležalová"
-			document.getElementById("ucebna").innerHTML = "U�ebna: 8.A"
+			Dejepis() //5.hodina
 		} else if (now.getHours() === 11 && now.getMinutes() < 50) {
-			document.getElementById("hodina").innerHTML = "Zeměpis" //5.hodina
-			document.getElementById("ucitel").innerHTML = "Hana Doležalová"
-			document.getElementById("ucebna").innerHTML = "U�ebna: 8.A"
+			Dejepis	() //5.hodina	
 		} else if (now.getHours() === 11 && now.getMinutes() > 50) {
-			document.getElementById("hodina").innerHTML = "Zeměpis" //6.hodina
-			document.getElementById("ucitel").innerHTML = "Hana Doležalová"
-			document.getElementById("ucebna").innerHTML = "U�ebna: 8.A"
-		} else if (now.getHours() === 12 && now.getMinutes() < 45) {
-			document.getElementById("hodina").innerHTML = "Zeměpis" //6.hodina
-			document.getElementById("ucitel").innerHTML = "Hana Doležalová"
-			document.getElementById("ucebna").innerHTML = "U�ebna: 8.A"
-		} else if (now.getHours() === 12 && now.getMinutes() > 45) {
-			document.getElementById("hodina").innerHTML = "KONEC"//	KONEC
+			document.getElementById("hodina").innerHTML = "KONEC" //6.hodina
 			document.getElementById("ucitel").innerHTML = ""
 			document.getElementById("ucebna").innerHTML = ""
-		} else if (now.getHours() > 12) {
-			document.getElementById("hodina").innerHTML = "KONEC"//KONEC
+		} else if (now.getHours() > 11) {
+			document.getElementById("hodina").innerHTML = "KONEC" //6.hodina
 			document.getElementById("ucitel").innerHTML = ""
 			document.getElementById("ucebna").innerHTML = ""
 		}
@@ -1023,9 +907,7 @@ if (localStorage.getItem(trida) == "9.B") {
 	
 	//sobota
 	if (now.getDay() === 6) {
-		document.getElementById("hodina").innerHTML = "Třídnická hodina"
-		document.getElementById("ucitel").innerHTML = "Kateřina Danešová"
-		document.getElementById("ucebna").innerHTML = "Učebna: 8.A"
+		ObcanskaVychova()
 	}
 
 } else {
